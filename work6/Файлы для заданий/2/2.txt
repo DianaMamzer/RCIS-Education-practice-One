@@ -1,0 +1,18 @@
+void main() {
+  var numsTask2 = File('K:\\РКИС (дарт)\\УП 1.6\\2\\numsTask2.txt');
+  var nums = numsTask2.readAsStringSync();
+  List<String> list = [];
+  
+  //Разделение на отдельные элементы содержимого из текстового файла.
+  list.add(nums);
+  list = nums.split('\n');
+  
+  //print('Массив: $list');
+  print(list.length);
+  //
+  for (int i = 0; i < list.length; i++) {
+    stdout.write('${list[i]} ');
+    
+  }
+
+}
